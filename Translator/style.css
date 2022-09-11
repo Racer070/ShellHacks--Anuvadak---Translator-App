@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,600;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5372f0;
+}
+
+.container{
+    width: 690px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.wrapper{
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+
+.text-input .to-text{
+    border-radius: 0px;
+    border-left: 1px solid #bbb;
+}
+
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+/* Controls */
+
+.controls{
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid #bbb;
+}
+
+.controls .row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #bbb;
+}
+
+.controls .icons{
+    width: 38%;
+}
+
+.controls .icons i{
+    width: 50px;
+    color: #9f9f9f;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.controls .row select{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.controls .exchange{
+    font-size: 16px;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+
+/* Button */
+
+.container button{
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+    margin-top: 20px;
+    background: #5372f0;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Media query */
+
+@media only screen and (max-width: 1200px) {
+
+    .container{
+        max-width: 370px;
+    }
+    .controls{
+        flex-direction: column;
+    }
+    .controls, li, .icons{
+        margin-top: 5px;
+    }
+    .controls, li, .icons, .icons i{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    
+}    
